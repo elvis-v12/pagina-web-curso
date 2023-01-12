@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px rgaba(0, 0, 0, 0.5);
+  color: #fff;
+  background-color: blueviolet;
+}
+button:hover {
+  background-color: rgba(101, 33, 165);
+}
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+header {
+  background-color: rgb(255, 255, 255);
+}
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.45em;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+header a:hover {
+  color: blueviolet;
+}
+.color-acento {
+  color: blueviolet;
+}
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(/Imageness/hero1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#hero h1 {
+  color: white;
+}
+#somos-proya {
+}
+#somos-proya .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+#nuestros-programas {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+#nuestros-programas .container {
+  padding: 100px 0;
+}
+#nuestros-programas h2 {
+  margin-top: 0;
+  font-size: 3.3em;
+}
+#nuestros-programas p {
+  display: none;
+}
+#nuestros-programas .carta {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px;
+  margin: 30px;
+  border-radius: 15px;
+}
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(/Imageness/desarrollador-frontend.jpg);
+}
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(/Imageness/programador-full-stack.jpeg);
+}
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url(/Imageness/programador-Java-1.jpg);
+}
+#carracteristicas .container {
+  text-align: center;
+  padding: 250px 12px;
+}
+#carracteristicas li {
+  margin: 16px 0px;
+  font-weight: bold;
+}
+#aplica-ya {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+#final h1 {
+  font-size: 9vh;
+}
+#final button {
+  font-size: 1.75em;
+}
+footer {
+  background-color: rgb(230, 230, 230);
+}
+footer p {
+  margin: 0;
+  color: rgb(100, 100, 100);
+  padding: 12px;
+}
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  #hero h1 {
+    font-size: 4em;
+  }
+  #somos-proya .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #somos-proya .texto {
+    width: 50%;
+    text-align: initial;
+    max-width: 600px;
+    display: flex;
+    padding-left: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos-proya h2 {
+    margin-top: 0;
+  }
+  #somos-proya .img-container {
+    background-image: linear-gradient(
+        0deg,
+        rgb(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.5)
+      ),
+      url("/Imageness/mg.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 500px;
+  }
+  #nuestros-programas .programas {
+    display: flex;
+    justify-content: center;
+  }
+  #nuestros-programas p {
+    display: block;
+    margin-bottom: 30px;
+  }
+  #nuestros-programas h2 {
+    font-size: 4em;
+  }
+  #nuestros-programas h3 {
+    margin-top: 0;
+  }
+  .contenedor-fooder {
+    flex-direction: column;
+    border: none;
+  }
+  .contenedor-foo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contenedor-foo h4 {
+    border: none;
+  }
+  .contenedor-foo p {
+    color: #ccc;
+    border-bottom: 1px solid#f2f2f2;
+    padding-bottom: 20px;
+  }
+  .titulo-final {
+    font-size: 20px;
+  }
+
+  #nuestros-programas .carta {
+    padding: 15px;
+    background-color: rgba(50, 50, 50, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  #carracteristicas .container {
+    text-align: initial;
+  }
+  #carracteristicas ul {
+    margin-left: 100px;
+  }
+  #carracteristicas {
+    background-image: url("/Imageness/programador.webp");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 700px) 120px;
+  }
+  #final h2 {
+    font-size: 5em;
+  }
+  #final button {
+    font-size: 2em;
+  }
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  #carracteristicas ul {
+    background-position-x: calc(100vw - 800px);
+  }
+}
+/* foteer */
+footer {
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+.contenedor-fooder {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.content-foo {
+  text-align: center;
+}
+.content-foo h4 {
+  color: #ccc;
+  border-bottom: 3px solid #af20d3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+.content-foo p {
+  color: #ccc;
+}
+.titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
