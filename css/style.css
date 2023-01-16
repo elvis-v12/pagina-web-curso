@@ -66,11 +66,12 @@ header a {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  font-weight: bold;
 }
 header a:hover {
   color: blueviolet;
 }
-.color-acento {
+.acento{
   color: blueviolet;
 }
 #hero {
@@ -91,7 +92,7 @@ header a:hover {
 }
 #somos-proya{
 }
-#somos-proya .container {
+#somos-proya .container{
   text-align: center;
   padding: 200px 12px;
 }
@@ -100,44 +101,44 @@ header a:hover {
   color: white;
   text-align: center;
 }
-#nuestros-programas .container {
+#nuestros-programas .container{
   padding: 100px 0;
 }
-#nuestros-programas h2 {
+#nuestros-programas h2{
   margin-top: 0;
   font-size: 3.3em;
 }
-#nuestros-programas p {
+#nuestros-programas p{
   display: none;
 }
-#nuestros-programas .carta {
+#nuestros-programas .carta{
   background-size: cover;
   background-position: center center;
   padding: 50px;
   margin: 30px;
   border-radius: 15px;
 }
-.carta:first-child {
+.carta:first-child{
   background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url(/Imageness/desarrollador-frontend.jpg);
 }
-.carta:nth-child(2) {
+.carta:nth-child(2){
   background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url(/Imageness/programador-full-stack.jpeg);
 }
-.carta:nth-child(3) {
+.carta:nth-child(3){
   background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
     url(/Imageness/programador-Java-1.jpg);
 }
-#carracteristicas .container {
+#carracteristicas .container{
   text-align: center;
   padding: 250px 12px;
 }
-#carracteristicas li {
+#carracteristicas li{
   margin: 16px 0px;
   font-weight: bold;
 }
-#aplica-ya {
+#aplica-ya{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,27 +148,100 @@ header a:hover {
   color: white;
   height: 80vh;
 }
-#final h1 {
+#final h1{
   font-size: 9vh;
 }
-#final button {
+#final button{
   font-size: 1.75em;
 }
+@media screen and (max-width:660px){
+ /*  footer*/
+ footer{
+  background:#414141;
+  margin: auto;
+  padding: 20px 0 10px 0;
+ }
+ .contactos-erf{
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  padding: 12px 0 6px 0;
+ }
+#contenido{
+  flex-direction: column;
+  border: none;
+  margin: auto;
+}
+.content-foo{
+  margin-bottom: 20px;
+text-align: center;
+padding: 0px;
+}
+.content-foo h4{
+  border: none;
+  color:rgb(233, 196, 196);
+  font-size: 25px;
+}
+.content-foo p{
+  color: #ccc;
+  border-bottom:  3px solid blueviolet;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: auto;
+padding-bottom: 50px;
+}
+.titulo-final{
+  font-size: 20px;
+  text-align:center ;
+  font-size: 25px;
+  color: rgb(219, 207, 207);
+}
+}
+@media screen and (min-width: 661px) {
+  /* contactos */
 footer {
-  background-color: rgb(230, 230, 230);
+  background: #414141;
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  
 }
-footer p {
-  margin: 0;
-  color: rgb(100, 100, 100);
-  padding: 12px;
+.contactos-erf{
+color: #fff;
+padding: 12px 0 6px 0;
+text-align: center;
+font-size: 40px;
 }
-footer .container {
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
+#contenido{
+display: flex;
+width: 90%;
+justify-content: space-evenly;
+margin: auto;
+padding-bottom: 50px;
+border-bottom: 1px solid #ccc;
 }
-@media (min-width: 720px) {
+.content-foo{
+text-align: center;
+}
+.content-foo h4{
+color: rgb(168, 162, 162);
+border-bottom: 3px solid #af20d3; 
+padding-bottom: 5px;
+margin-bottom: 10px;
+font-size: 25px;
+}
+.content-foo p{
+  color: rgb(168, 162, 162);
+  font-size: 20px;
+  
+}
+.titulo-final{
+text-align: center;
+font-size: 27px;
+margin: 20px 0 0 0;
+color: #d6d8e7c5;
+}
+/*  Header*/
   header {
     position: fixed;
     width: 100%;
@@ -226,26 +300,6 @@ footer .container {
   #nuestros-programas h3 {
     margin-top: 0;
   }
-  .contenedor-fooder {
-    flex-direction: column;
-    border: none;
-  }
-  .contenedor-foo {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .contenedor-foo h4 {
-    border: none;
-  }
-  .contenedor-foo p {
-    color: #ccc;
-    border-bottom: 1px solid#f2f2f2;
-    padding-bottom: 20px;
-  }
-  .titulo-final {
-    font-size: 20px;
-  }
-
   #nuestros-programas .carta {
     padding: 15px;
     background-color: rgba(50, 50, 50, 0.5);
@@ -269,45 +323,11 @@ footer .container {
   #final button {
     font-size: 2em;
   }
-  footer .container {
-    justify-content: flex-end;
-  }
-}
-@media (min-width: 1200px) {
+@media screen and (min-width:1200) {
   #carracteristicas ul {
     background-position-x: calc(100vw - 800px);
   }
 }
-/* foteer */
-footer {
-  background: #414141;
-  padding: 60px 0 30px 0;
-  margin: auto;
-  overflow: hidden;
 }
-.contenedor-fooder {
-  display: flex;
-  width: 90%;
-  justify-content: space-evenly;
-  margin: auto;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #ccc;
-}
-.content-foo {
-  text-align: center;
-}
-.content-foo h4 {
-  color: #ccc;
-  border-bottom: 3px solid #af20d3;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
-}
-.content-foo p {
-  color: #ccc;
-}
-.titulo-final {
-  text-align: center;
-  font-size: 24px;
-  margin: 20px 0 0 0;
-  color: #9e9797;
-}
+
+
